@@ -1,0 +1,36 @@
+name: 📋 Task
+description: Template simples para criar uma task
+title: "[TASK]: "
+labels: ["task"]
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que precisa ser feito?
+      placeholder: Descreva a task aqui...
+    validations:
+      required: true
+
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceite
+      description: Quando essa task pode ser considerada concluída?
+      placeholder: |
+        - [ ] Critério 1
+        - [ ] Critério 2
+    validations:
+      required: false
+
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - Alta
+        - Média
+        - Baixa
+      default: 1
+    validations:
+      required: false
