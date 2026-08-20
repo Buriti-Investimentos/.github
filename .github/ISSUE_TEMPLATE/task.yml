@@ -2,6 +2,7 @@ name: 📋 Task
 description: Template simples para criar uma task
 title: "[TASK]: "
 labels: ["task"]
+type: "Task"
 body:
   - type: textarea
     id: descricao
