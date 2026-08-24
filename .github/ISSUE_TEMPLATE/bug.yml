@@ -1,0 +1,57 @@
+name: 🐛 Bug
+description: Template simples para reportar um bug
+title: "[BUG]: "
+labels: ["bug"]
+type: "Bug"
+body:
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição
+      description: O que está acontecendo de errado?
+      placeholder: Descreva o bug aqui...
+    validations:
+      required: true
+
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Como podemos reproduzir o problema?
+      placeholder: |
+        1. Vá até...
+        2. Clique em...
+        3. Veja o erro...
+    validations:
+      required: false
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria acontecer?
+      placeholder: Descreva o comportamento esperado...
+    validations:
+      required: false
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: Screenshots, logs, ambiente (navegador, versão, etc.)
+      placeholder: Adicione qualquer informação relevante...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: Severidade
+      options:
+        - Crítica
+        - Alta
+        - Média
+        - Baixa
+      default: 2
+    validations:
+      required: false
