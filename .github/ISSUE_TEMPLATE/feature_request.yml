@@ -1,0 +1,56 @@
+name: Feature Request
+description: Sugira uma nova funcionalidade ou melhoria para o projeto
+title: "[FEATURE] "
+labels: ["enhancement"]
+assignees: []
+type: "Feature"
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Descreva a funcionalidade de forma clara e objetiva. Qual é o problema que isso resolve? Qual o resultado esperado ?
+      placeholder: "Descreva a nova funcionalidade..."
+    validations:
+      required: true
+
+  - type: input
+    id: start_date
+    attributes:
+      label: Start date
+      description: Data prevista para iniciar a funcionalidade
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: input
+    id: target_date
+    attributes:
+      label: Target date
+      description: Data prevista para completar a funcionalidade
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: "## Dependências"
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências
+      description: Liste as tarefas ou funcionalidades que precisam ser concluídas antes
+      placeholder: "- [ ] Dependência 1\n- [ ] Dependência 2"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Contexto adicional
+      description: Adicione qualquer contexto, screenshots, links ou informações relevantes
+      placeholder: "Adicione contexto adicional, screenshots, links..."
+    validations:
+      required: false
