@@ -15,24 +15,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: start_date
-    attributes:
-      label: Start date
-      description: Data prevista para iniciar a funcionalidade
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: true
-
-  - type: input
-    id: target_date
-    attributes:
-      label: Target date
-      description: Data prevista para completar a funcionalidade
-      placeholder: "YYYY-MM-DD"
-    validations:
-      required: true
-
   - type: markdown
     attributes:
       value: "## Dependências"
